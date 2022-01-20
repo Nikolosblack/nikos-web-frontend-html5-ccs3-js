@@ -1,0 +1,408 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background:#303133;color:#fff
+}
+
+.resize {
+  width: 100%;
+  max-width: 1170px;;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.header {
+  padding: 70px 0 40px;
+}
+
+header .logo img {
+  width: 120px;
+  display: inline-block;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nav {
+  text-align: center;
+}
+
+.burger {
+  position: relative;
+  display: none; 
+  height: 20px;
+  width: 24px;
+  line-height: 24px;
+    
+}
+
+.burger__inner {
+  background-color: #303133;
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  width: 24px;
+  height: 2px;
+}
+
+
+.burger__inner:before {
+  content: "";
+  top: 8px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #303133;
+}
+
+.burger__inner:after {
+  content: "";
+  top: -8px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #303133;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #303133;
+}
+
+.list__item {
+  display: inline-block;
+  margin-left: 35px;
+  padding-bottom: 10px;
+}
+
+.nav__link {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #303133;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  color: #303133;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #303133;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+  margin-bottom: -1px;
+}
+
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+header .nav menu li a:first-child {
+  margin-left: 0; 
+}
+
+/*dropdown*/
+
+.dropdown {
+  position: relative;
+}
+
+.sub__menu {
+  display: none;
+  position: absolute;
+  background-color: #303133;
+  width: 180px;
+  padding: 15px 0;
+  top: 28px;
+  left: -20px;
+  z-index: 1;
+}
+
+.dropdown:hover > .sub__menu {
+  display: block;
+  z-index: 99999;
+}
+
+.sub__menu .sub__menu {
+  position: absolute;
+  top: -15px;
+  left: 180px;
+}
+
+.sub__menu .sub__menu-item {
+  display: block;
+  margin: 0;
+  text-align: left;
+  padding: 5px 20px;
+  color: #fff;
+}
+
+.sub__link {
+  display: inline-block;
+  position: relative;
+  color: white;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 3px;
+}
+    
+.sub__link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+  margin-bottom: -1px;
+}
+
+.sub__link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*icon arrow to dropdown*/
+
+.fa-chevron-right:before {
+  position: absolute;
+  font-family: FontAwesome;
+  content: "\f105";
+  padding-left: 8px;
+  top: 0;
+}
+
+.about__img {
+  display: block;
+  width: 1200px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.about__content {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.about__title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  line-height: 24px;
+  color: #303133;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about__text {
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 45px;
+  color: #303133;
+}
+
+.social__icons {
+  text-align: center;
+}
+
+.social__icons li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social__icons li a {
+    display: block;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    line-height: 38px;
+    border-radius: 50%;
+    color: #303133;
+    transition: background-color .5s linear;
+}
+
+.social__icons li a:hover {
+    background-color: #303133;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 0 70px;
+}
+
+.footer__copyright {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #303133;
+}
+
+/*Responsive*/
+
+@media (max-width:500px) {
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav {
+    display: block;
+    background-color: #303133;
+    color: white;
+    padding-top: 10px;
+  }
+
+  .active {
+    display: none;
+    width: 100%;
+  }
+
+  .underline::after {
+    background-color: #fff;
+  }
+
+  .nav__link {
+    color: white;
+  }
+  
+  .sub__menu  {
+    display: block;
+    position: static;
+    padding: 0;
+  } 
+
+  .sub__menu .sub__menu {
+    position: static;
+  }  
+
+  .list__item {
+    display: block;
+    margin-left: 35px;
+    text-align: left;
+  }
+
+  .list__item.dropdown {
+    padding: 0;
+  }
+
+  .sub__menu {
+    width: 100%;
+  }
+
+   .sub__menu-item.dropdown {
+    padding: 0 20px;
+  }
+
+  .footer p .underline:after  {
+    background-color:#303133;
+  } 
+}
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+
+

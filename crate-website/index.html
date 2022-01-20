@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Crate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+        <header class="header">
+            <div class="resize">
+                <div class="header__inner">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png">
+                        </a>
+                    </div>
+                    <div class="burger" id="burger">
+                        <a id="js-nav" href="#">
+                            <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                                <svg width="25" height="25" viewBox="0 0 100 100">
+                                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                                    <path class="line line2" d="M 20,50 H 80" />
+                                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <nav class="nav active" id="js-toggle-nav-wrap">
+                    <menu class="list">
+                        <li class="list__item">
+                            <a class="nav__link underline" href="index.html">Home</a>
+                        </li>
+                        <li class="list__item">
+                            <a class="nav__link underline" href="about.html">About</a>
+                        </li>
+                        <li class="list__item dropdown">
+                            <a class="nav__link underline" href="#">Pages</a>
+                            <ul class="sub__menu">
+                                <li class="sub__menu-item">
+                                    <a class="sub__link" href="#">Portfolio</a>
+                                </li>
+                                <li class="sub__menu-item dropdown">
+                                    <a class="sub__link" href="blog-grid.html">Blog<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                    <ul class="sub__menu">
+                                        <li class="sub__menu-item">
+                                            <a class="sub__link" href="blog-grid.html">Grid</a>
+                                        </li>
+                                        <li class="sub__menu-item">
+                                            <a class="sub__link" href="full-width.html">Full width</a>
+                                        </li>
+                                        <li class="sub__menu-item">
+                                            <a class="sub__link" href="blog-sidebar.html">Sidebar</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub__menu-item">
+                                    <a class="sub__link" href="gallery.html">Gallery</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list__item">
+                            <a class="nav__link underline" href="blog-sidebar.html">Blog</a>
+                        </li>
+                        <li class="list__item">
+                            <a class="nav__link underline" href="contacts.html">Contact</a>
+                        </li>
+                    </menu>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="resize">
+                <div class="page__title">
+                    <p>
+                        Hey! My name is <strong>Peter Crate</strong>. I'm a Los Angeles native who lives and works in NYC with my wife Helena and my pug Noah. I'm a freelance visual artist, also contributing editor at Dribbble and pen this blog, where I share personal style snaps, travel, lifestyle and the many things I love.
+                    </p>
+                </div>
+                <div class="filters__wrapper">
+                    <ul class="filters" id="filters">
+                        <li class="filter__link active" data-filter="*">All</li>
+                        <li class="filter__link design" data-filter=".design">Design</li>
+                        <li class="filter__link illustration" data-filter=".illustration">Illustration</li>
+                        <li class="filter__link people" data-filter=".people">People</li>
+                        <li class="filter__link street" data-filter=".street">Street</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <div class="grid grid__wrapper">
+            <div class="grid-item people" data-category="people">
+                <img src="img/main1.jpg" alt="" >
+                <div class="grid-content">
+                    <div class="grid-title">Noah</div>
+                    <div class="grid-text">People</div>
+                </div>
+            </div>
+            <div class="grid-item design" data-category="design">
+                <img src="img/main2.jpg" alt="" >
+                <div class="grid-content">
+                    <div class="grid-title">Crate</div>
+                    <div class="grid-text">Design</div>
+                </div>
+            </div>
+            <div class="grid-item street" data-category="street">
+                <img src="img/main3.jpg" alt="" >
+                <div class="grid-content">
+                    <div class="grid-title">Dress</div>
+                    <div class="grid-text">Street</div>
+                </div>
+            </div>
+            <div class="grid-item design" data-category="design">
+                <img src="img/main4.jpg" alt="" >
+                <div class="grid-content">
+                    <div class="grid-title">Sculpture</div>
+                    <div class="grid-text">Design</div>
+                </div>
+            </div>
+            <div class="grid-item people" data-category="people">
+                <img src="img/main5.jpg" alt="" >
+                <div class="grid-content">
+                    <div class="grid-title">Sketch Girl</div>
+                    <div class="grid-text">People</div>
+                </div>
+            </div>
+            <div class="grid-item street" data-category="street">
+                <img src="img/main6.jpg" alt="" >
+                <div class="grid-content">
+                    <div class="grid-title">Portrait</div>
+                    <div class="grid-text">Street</div>
+                </div>
+            </div>
+            <div class="grid-item illustration" data-category="illustration">
+                <img src="img/main7.jpg" alt="" >
+                <div class="grid-content">
+                    <div class="grid-title">Architecture</div>
+                    <div class="grid-text">Illustration</div>
+                </div>
+            </div>
+            <div class="grid-item illustration" data-category="illustration">
+                <img src="img/main8.jpg" alt="" >
+                <div class="grid-content">
+                    <div class="grid-title">Fashionsta</div>
+                    <div class="grid-text">Illustration</div>
+                </div>
+            </div>
+            <div class="grid-item people" data-category="people">
+                <img src="img/main9.jpg" alt="" >
+                <div class="grid-content">
+                    <div class="grid-title">Simple Letter</div>
+                    <div class="grid-text">People</div>
+                </div>
+            </div>
+            <div class="grid-item design" data-category="design">
+                <img src="img/main10.jpg" alt="" >
+                <div class="grid-content">
+                    <div class="grid-title">Treebeard</div>
+                    <div class="grid-text">Design</div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="resize">
+                <p class="footer__copyright">Copyright © 2021. Crate by <a class="underline" href="#">NeuronThemes</a></p>
+            </div>
+        </footer>
+        <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+        <script src="libs/iso/isotope.pkgd.min.js"></script>
+        <script src="js/iso.js"></script>
+        <script src="js/main.js"></script> 
+    </body>
+</html>

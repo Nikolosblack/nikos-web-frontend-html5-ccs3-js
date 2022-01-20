@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <header class="header">
+    <div class="resize">
+      <div class="header__inner">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png">
+          </a>
+        </div>
+        <div class="burger" id="burger">
+          <a id="js-nav" href="#">
+             <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                <svg width="25" height="25" viewBox="0 0 100 100">
+                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+      <nav class="nav active" id="js-toggle-nav-wrap">
+       <menu class="list">
+          <li class="list__item">
+            <a class="nav__link underline" href="index.html">Home</a>
+          </li>
+          <li class="list__item">
+            <a class="nav__link underline" href="about.html">About</a>
+          </li>
+          <li class="list__item dropdown">
+            <a class="nav__link underline" href="#">Pages</a>
+              <ul class="sub__menu">
+               <li class="sub__menu-item">
+                  <a class="sub__link" href="#">Portfolio</a>
+               </li>
+               <li class="sub__menu-item dropdown">
+                  <a class="sub__link" href="blog-grid.html">Blog<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                  <ul class="sub__menu">
+                     <li class="sub__menu-item">
+                        <a class="sub__link" href="blog-grid.html">Grid</a>
+                     </li>
+                     <li class="sub__menu-item">
+                        <a class="sub__link" href="full-width.html">Full width</a>
+                     </li>
+                     <li class="sub__menu-item">
+                        <a class="sub__link" href="blog-sidebar.html">Sidebar</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="sub__menu-item">
+                  <a class="sub__link" href="gallery.html">Gallery</a>
+               </li>
+            </ul>
+          </li>
+          <li class="list__item">
+            <a class="nav__link underline" href="blog-sidebar.html">Blog</a>
+          </li>
+          <li class="list__item">
+            <a class="nav__link underline" href="contacts.html">Contact</a>
+          </li>
+       </menu>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="resize">
+      <div class="about">
+        <img class="about__img" src="img/about.jpg">
+      </div>
+      <div class="about__content">
+        <h2 class="about__title">About Me</h2>
+        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Itaque unde sapiente quaerat ratione consequuntur autem et ipsa? Illo fugiat mollitia eum exercitationem id vel illum, fugit natus eaque. Eaque beatae nostrum doloremque ad, est voluptatibus itaque cupiditate, quia quis eius obcaecati facilis similique cumque incidunt ipsum tenetur numquam, expedita repellendus dicta qui voluptate error quas officiis illum. Corrupti fuga delectus pariatur totam laborum ipsum consectetur molestiae labore cumque. Repudiandae delectus rem deleniti maxime qui consectetur eligendi ex nesciunt doloremque voluptate quidem aspernatur sit nemo, ipsam, velit saepe, accusamus libero. Natus inventore praesentium quo repellat numquam porro sed sint. Quia quis eius obcaecati facilis similique cumque incidunt ipsum tenetur numquam, expedita repellendus dicta qui voluptate error quas officiis illum qui consectetur voluptate</p>
+        <ul class="social__icons">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="resize">
+      <p class="footer__copyright">Copyright © 2021. Crate by <a class="underline" href="#">NeuronThemes</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script> 
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blog Sidebar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/blog-sidebar.css">
+</head>
+<body>
+  <header class="header">
+    <div class="resize">
+      <div class="header__inner">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png">
+          </a>
+        </div>
+        <div class="burger" id="burger">
+          <a id="js-nav" href="#">
+  
+            <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                <svg width="25" height="25" viewBox="0 0 100 100">
+                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+      <nav class="nav active" id="js-toggle-nav-wrap">
+       <menu class="list">
+          <li class="list__item">
+            <a class="nav__link underline" href="index.html">Home</a>
+          </li>
+          <li class="list__item">
+            <a class="nav__link underline" href="about.html">About</a>
+          </li>
+          <li class="list__item dropdown">
+            <a class="nav__link underline" href="#">Pages</a>
+              <ul class="sub__menu">
+               <li class="sub__menu-item">
+                  <a class="sub__link" href="#">Portfolio</a>
+               </li>
+               <li class="sub__menu-item dropdown">
+                  <a class="sub__link" href="blog-grid.html">Blog<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                  <ul class="sub__menu">
+                     <li class="sub__menu-item">
+                        <a class="sub__link" href="blog-grid.html">Grid</a>
+                     </li>
+                     <li class="sub__menu-item">
+                        <a class="sub__link" href="full-width.html">Full width</a>
+                     </li>
+                     <li class="sub__menu-item">
+                        <a class="sub__link" href="blog-sidebar.html">Sidebar</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="sub__menu-item">
+                  <a class="sub__link" href="gallery.html">Gallery</a>
+               </li>
+            </ul>
+          </li>
+          <li class="list__item">
+            <a class="nav__link underline" href="blog-sidebar.html">Blog</a>
+          </li>
+          <li class="list__item">
+            <a class="nav__link underline" href="contacts.html">Contact</a>
+          </li>
+       </menu>
+      </nav>
+    </div>
+  </header>
+  <section>
+        <div class="resize">
+            <div class="page__title">
+                <p>
+                    <strong>Blog Wide</strong>, consectetur adipiscing elit. Fusce pretium, leo quis congue tempor, velit risus vehicula felis, in efficitur neque arcu at augue. Maecenas sit amet pretium sem. In sit amet tempus neque, nec fringilla odio. Sed accumsan urna ut erat congue porttitor. Nam bibendum.
+                </p>
+            </div>
+        </div>
+   </section>
+    <div class="blog">
+      <div class="resize">
+        <div class="blog__container">
+          <div class="flex__blog">
+          <div class="blog__item">
+            <div class="post__thumbnail">
+              <a href="">
+                <img src="https://w4s5h3f6.rocketcdn.me/crate/wp-content/uploads/2017/02/rock-head.jpg">
+              </a>
+            </div>
+             <div class="post__meta">
+              <h3>
+                <a href="">Rockhead</a>
+              </h3>
+              <ul class="">
+                <li class="date">February 19, 2017</li>
+                <li class="category">
+                  <a class="underline--gold" href="">Fashion</a>
+                  <a class="underline--gold" href="">Lifestyle</a>
+                  <a class="underline--gold" href="">Travel</a>
+                </li>
+              </ul>
+            </div>
+            <div class="post__info">
+              <p>Sed facilisis pellentesque orci, id dapibus urna porta ut. Curabitur nulla velit, bibendum ut eros vitae, tincidunt tempor purus. Aenean non ligula feugiat, laoreet tortor in, fermentum magna. Nunc condimentum quam turpis, quis laoreet justo placerat vel. Maecenas dapibus mi et sollicitudin euismod. Cras egestas dignissim sapien, in viverra orci varius vitae. Praesent quis turpis felis. Nulla facilisis purus a viverra...</p>
+            </div>
+            <div class="button__holder">
+              <a class="button" href="">Read More</a>
+            </div>
+          </div>
+           <div class="blog__item">
+            <div class="post__thumbnail">
+              <a href="#">
+                <img src="https://w4s5h3f6.rocketcdn.me/crate/wp-content/uploads/2017/02/Portrait-Sketch.jpg">
+              </a>
+            </div>
+            <div class="post__meta">
+              <h3>
+                <a href="">Portrait Sketch</a>
+              </h3>
+               <ul class="">
+                <li class="date">February 19, 2017</li>
+                <li class="category">
+                  <a class="underline--gold" href="">Drawings</a>
+                  <a class="underline--gold" href="">People</a>
+                </li>
+              </ul>
+            </div>
+              <div class="post__info">
+              <p>Sed facilisis pellentesque orci, id dapibus urna porta ut. Curabitur nulla velit, bibendum ut eros vitae, tincidunt tempor purus. Aenean non ligula feugiat, laoreet tortor in, fermentum magna. Nunc condimentum quam turpis, quis laoreet justo placerat vel. Maecenas dapibus mi et sollicitudin euismod. Cras egestas dignissim sapien, in viverra orci varius vitae. Praesent quis turpis felis. Nulla facilisis purus a viverra...</p>
+            </div>
+            <div class="button__holder">
+              <a class="button" href="">Read More</a>
+            </div>
+          </div>
+           <div class="blog__item">
+            <div class="post__thumbnail">
+              <a href="#">
+                <img 
+                src="https://w4s5h3f6.rocketcdn.me/crate/wp-content/uploads/2017/02/Drawing-Girl.jpg">
+              </a>
+            </div>
+            <div class="post__meta">
+              <h3>
+                <a href="">Drawing Girl</a>
+              </h3>
+               <ul class="">
+                <li class="date">February 19, 2017</li>
+                <li class="category">
+                  <a class="underline--gold" href="">Drawings</a>
+                  <a class="underline--gold" href="">People</a>
+                </li>
+              </ul>
+            </div>
+              <div class="post__info">
+              <p>Sed facilisis pellentesque orci, id dapibus urna porta ut. Curabitur nulla velit, bibendum ut eros vitae, tincidunt tempor purus. Aenean non ligula feugiat, laoreet tortor in, fermentum magna. Nunc condimentum quam turpis, quis laoreet justo placerat vel. Maecenas dapibus mi et sollicitudin euismod. Cras egestas dignissim sapien, in viverra orci varius vitae. Praesent quis turpis felis. Nulla facilisis purus a viverra...</p>
+            </div>
+            <div class="button__holder">
+              <a class="button" href="">Read More</a>
+            </div>
+          </div>
+           <div class="blog__item">
+            <div class="post__thumbnail">
+              <a href="#">
+                <img src="https://w4s5h3f6.rocketcdn.me/crate/wp-content/uploads/2017/02/World-Map.jpg">
+              </a>
+            </div>
+            <div class="post__meta">
+              <h3>
+                <a href="">World Map</a>
+              </h3>
+               <ul class="">
+                <li class="date">February 19, 2017</li>
+                <li class="category">
+                 <a class="underline--gold" href="">Drawings</a>
+                </li>
+              </ul>
+            </div>
+              <div class="post__info">
+              <p>Sed facilisis pellentesque orci, id dapibus urna porta ut. Curabitur nulla velit, bibendum ut eros vitae, tincidunt tempor purus. Aenean non ligula feugiat, laoreet tortor in, fermentum magna. Nunc condimentum quam turpis, quis laoreet justo placerat vel. Maecenas dapibus mi et sollicitudin euismod. Cras egestas dignissim sapien, in viverra orci varius vitae. Praesent quis turpis felis. Nulla facilisis purus a viverra...</p>
+            </div>
+            <div class="button__holder">
+              <a class="button" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="widget">
+            <h6 class="widget-title">About me</h6>
+            <div class="text-widget">
+              <p class="widget__photo"><img src="img/blog-about.jpg" alt=""></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium tellus attritue pretium sagittis. Pretium tellus at pretium.</p>
+            </div>
+          </div>
+          <div class="widget-entries">
+            <h6 class="widget-title">Recent Posts</h6>
+            <ul>
+              <li><a href="">Rockhead</a></li>
+              <li><a href="">Portrait Sketch</a></li>
+              <li><a href="">Drawing Girl</a></li>
+              <li><a href="">World Map</a></li>
+            </ul>
+          </div>
+          <div class="widget-tag-cloud">
+            <h6 class="widget-title">Tags</h6>
+            <div class="tag-cloud">
+              <a href="">animation</a>
+              <a href="">clean</a>
+              <a href="">drawing</a>
+              <a href="">painting</a>
+              <a href="">portrait</a>
+              <a href="">retina</a>
+              <a href="">simple</a>
+              <a href="">sketch</a>
+              <a href="">unique</a>
+            </div>
+          </div>
+        </div>
+        </div> 
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="resize-footer">
+            <p class="footer__copyright">Copyright © 2021. Crate by <a class="footer__link underline" href="">NeuronThemes</a></p>
+        </div>
+    </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
